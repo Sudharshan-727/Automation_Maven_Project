@@ -1,0 +1,17 @@
+package datadriventesting;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+
+public class ToFetchDataFromExcelSheet {
+public static void main(String[] args) throws EncryptedDocumentException, IOException {
+	FileInputStream fis=new FileInputStream("./Test_Data/Test_Script_Data.xlsx");
+	Workbook wb=WorkbookFactory.create(fis);
+	String details = wb.getSheet("Demo").getRow(1).getCell(0).getStringCellValue();
+	System.out.println(details);
+}
+}
