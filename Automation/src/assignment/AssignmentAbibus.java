@@ -41,12 +41,12 @@ public static void main(String[] args) throws InterruptedException {
 		System.out.println("-------------");
 	}
 	
-//	List<WebElement> price = driver.findElements(By.xpath("//h5[text()='BigBus']/../../../../..//span[text()='₹']"));
-//	
-//	for(WebElement p:price)
-//	{
-//		System.out.println(p.getText());
-//		System.out.println("------------------");
-//	}
+	List<WebElement> price = driver.findElements(By.xpath("//h5[text()='BigBus']/../../../../..//span[text()='₹']"));
+	
+	for(WebElement p:price)
+	{
+		System.out.println(p.getText());
+		System.out.println("------------------");
+	}
 }
 }
