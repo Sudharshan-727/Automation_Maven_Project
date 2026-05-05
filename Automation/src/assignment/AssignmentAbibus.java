@@ -33,13 +33,13 @@ public static void main(String[] args) throws InterruptedException {
 //		System.out.println("----------------------------");
 //	}
 	
-	 List<WebElement> places = driver.findElements(By.xpath("//h5[text()='BigBus']/../..//div[@id='travel-distance-container']"));
-	for(WebElement place:places)
-	{
-		Thread.sleep(5000);
-		System.out.println(place.getText());
-		System.out.println("-------------");
-	}
+//	 List<WebElement> places = driver.findElements(By.xpath("//h5[text()='BigBus']/../..//div[@id='travel-distance-container']"));
+//	for(WebElement place:places)
+//	{
+//		Thread.sleep(5000);
+//		System.out.println(place.getText());
+//		System.out.println("-------------");
+//	}
 	
 	List<WebElement> price = driver.findElements(By.xpath("//h5[text()='BigBus']/../../../../..//span[text()='₹']"));
 	
